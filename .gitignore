@@ -1,0 +1,27 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+local/
+outputs/
+.test-output/
+
+# Local execution notes and verification history are not source deliverables.
+task_plan.md
+findings.md
+progress.md
+verification.json
+.env
+.env.*
+!.env.example
+
+# Credentials, private backups and runtime logs.
+*.pem
+*.key
+*.p12
+*.pfx
+*.bundle
+*.log

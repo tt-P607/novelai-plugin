@@ -1,0 +1,27 @@
+NovelAI Plugin
+Copyright (C) 2026 NovelAI Plugin contributors
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify it under
+GNU Affero General Public License version 3 or any later version. See LICENSE.
+
+Adapted source:
+- Huishu pricing logic and native payload mapping: internal/pricing/pricing.go
+  and internal/originapi/adapter.go, ported to src/novelai_private/pricing.py.
+- Huishu image metadata mapping/decoding:
+  apps/web/src/features/novelai/lib/metadata.ts, adapted and extended in
+  src/novelai_private/metadata.py.
+These sources were supplied by the project owner for reuse in this plugin.
+The adapted implementation is distributed with this program's source under
+AGPL-3.0-or-later. Local configuration and the original private repository
+location are not part of this distribution.
+
+Public interface/schema and format references:
+- https://image.novelai.net/docs/doc.json (bundled OpenAPI snapshot)
+- https://github.com/NovelAI/novelai-image-metadata (metadata format reference)
+- https://docs.novelai.net/en/image/ (feature and parameter documentation)
+
+NovelAI and related service names are the property of their respective owners.
+This project is independent and is not an official NovelAI product. Third-party
+Python dependencies retain their respective licenses; they are resolved from
+uv.lock rather than vendored into the source or plugin archive.

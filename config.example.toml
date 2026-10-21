@@ -1,0 +1,14 @@
+# Copy to your config.toml. Relative paths resolve against this config file.
+# Credentials are read afresh on every request; editing token.txt needs no server restart.
+token_file = "token.txt"
+output_dir = "../outputs"
+# For a native-format gateway, configure its address and corresponding key.
+base_url = "https://image.novelai.net"
+timeout_seconds = 300
+preview_max_side = 1536
+
+# Optional proxy, only if this process cannot use your normal system connection.
+# proxy = "http://127.0.0.1:7890"
+
+# Restrict local picture reads if desired. Empty means any explicit local image path.
+allowed_image_roots = []
